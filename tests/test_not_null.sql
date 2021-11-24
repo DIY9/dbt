@@ -26,7 +26,7 @@
 
 {% endmacro %}
 
-{{
+{#
     Then in our schema.yml files, we can specify environments by using our env key:
 
     models:
@@ -42,4 +42,4 @@
                 # this test will only run when target.name == prod
                 - not_null:
                     env: prod
-}}
+#}
