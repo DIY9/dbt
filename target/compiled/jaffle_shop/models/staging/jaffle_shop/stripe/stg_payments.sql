@@ -5,7 +5,8 @@ select
     status,
 
     -- amount is stored in cents, convert it to dollars
-    amount / 100 as amount,
+    -- amount / 100 as amount,
+    round( 1.0 * amount / 100, 4) as amount, 
     created as created_at
 
 from `dbt-tutorial`.`stripe`.`payment`
