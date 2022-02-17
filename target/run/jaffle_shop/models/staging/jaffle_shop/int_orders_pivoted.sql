@@ -1,4 +1,8 @@
-with payments as (
+
+
+  create or replace view `striking-gadget-328313`.`dev`.`int_orders_pivoted`
+  OPTIONS()
+  as with payments as (
     select * from `striking-gadget-328313`.`dev`.`stg_payments`
 ),
 
@@ -13,4 +17,5 @@ final as (
     group by 1
 )
 
-select * from final
+select * from final;
+

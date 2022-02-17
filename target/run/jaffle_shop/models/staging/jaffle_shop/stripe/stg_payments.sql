@@ -1,6 +1,6 @@
 
 
-  create or replace view `striking-gadget-328313`.`dbt_dyisar`.`stg_payments`
+  create or replace view `striking-gadget-328313`.`dev`.`stg_payments`
   OPTIONS()
   as select
     id as payment_id,
@@ -9,7 +9,8 @@
     status,
 
     -- amount is stored in cents, convert it to dollars
-    amount / 100 as amount,
+    -- amount / 100 as amount,
+    round( 1.0 * amount / 100, 4) as amount, 
     created as created_at
 
 from `dbt-tutorial`.`stripe`.`payment`;

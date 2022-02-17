@@ -1,8 +1,8 @@
 with customers as (
-    select * from `striking-gadget-328313`.`dbt_dyisar`.`stg_customers`
+    select * from `striking-gadget-328313`.`dev`.`stg_customers`
 ),
 orders as (
-    select * from `striking-gadget-328313`.`dbt_dyisar`.`fct_orders`
+    select * from `striking-gadget-328313`.`dev`.`fct_orders`
 ),
 customer_orders as (
     select

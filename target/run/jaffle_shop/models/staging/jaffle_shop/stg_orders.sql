@@ -1,6 +1,6 @@
 
 
-  create or replace view `striking-gadget-328313`.`dbt_dyisar`.`stg_orders`
+  create or replace view `striking-gadget-328313`.`dev`.`stg_orders`
   OPTIONS()
   as with orders as (
     

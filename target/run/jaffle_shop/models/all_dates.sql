@@ -1,6 +1,6 @@
 
 
-  create or replace table `striking-gadget-328313`.`dbt_dyisar`.`all_dates`
+  create or replace table `striking-gadget-328313`.`dev`.`all_dates`
   
   
   OPTIONS()
