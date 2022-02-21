@@ -1,9 +1,9 @@
 with orders as  (
-    select * from `striking-gadget-328313`.`dbt_dyisar`.`stg_orders`
+    select * from `striking-gadget-328313`.`dev`.`stg_orders`
 ),
 
 payments as (
-    select * from `striking-gadget-328313`.`dbt_dyisar`.`stg_payments`
+    select * from `striking-gadget-328313`.`dev`.`stg_payments`
 ),
 
 order_payments as (

@@ -1,5 +1,5 @@
 with payments as (
-    select * from `striking-gadget-328313`.`dbt_dyisar`.`stg_payments`
+    select * from `striking-gadget-328313`.`dev`.`stg_payments`
 ),
 
 final as (

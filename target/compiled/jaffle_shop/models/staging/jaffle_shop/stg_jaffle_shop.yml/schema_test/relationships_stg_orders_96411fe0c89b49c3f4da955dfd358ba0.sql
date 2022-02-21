@@ -4,13 +4,13 @@
 
 with child as (
     select customer_id as from_field
-    from `striking-gadget-328313`.`dbt_dyisar`.`stg_orders`
+    from `striking-gadget-328313`.`dev`.`stg_orders`
     where customer_id is not null
 ),
 
 parent as (
     select customer_id as to_field
-    from `striking-gadget-328313`.`dbt_dyisar`.`stg_customers`
+    from `striking-gadget-328313`.`dev`.`stg_customers`
 )
 
 select

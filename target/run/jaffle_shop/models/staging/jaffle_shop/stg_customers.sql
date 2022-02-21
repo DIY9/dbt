@@ -1,6 +1,6 @@
 
 
-  create or replace view `striking-gadget-328313`.`dbt_dyisar`.`stg_customers`
+  create or replace view `striking-gadget-328313`.`dev`.`stg_customers`
   OPTIONS()
   as with customers as (
     
